@@ -11,6 +11,7 @@ class Product extends Model
         // اسم الجدول في قاعدة البيانات
         protected $table = 'products';
 
+
         // الخصائص التي يمكن التعديل عليها
         protected $fillable = ['name', 'description', 'size', 'color', 'price', 'category_id'];
 
