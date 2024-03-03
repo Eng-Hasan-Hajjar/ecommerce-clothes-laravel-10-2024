@@ -20,6 +20,10 @@ return new class extends Migration
             $table->decimal('price', 8, 2);
             $table->unsignedBigInteger('category_id');
             $table->timestamps();
+
+                // تعريف مفتاح خارجي للفئة
+                $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
+
         });
     }
 
